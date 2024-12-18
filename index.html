@@ -9,5 +9,72 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <div id="hero">
+      <img class="logo-white" />
+      <h1 class="headline">Your Career in Web Development Starts Here</h1>
+      <p class="quote">
+        Providing resources we wish we had learning web development. Designed to
+        fill in the gap for people who are trying to hack it on their own but
+        still want a high quality education.
+      </p>
+    </div>
+    <div id="form-section">
+      <div class="logo-and-name">
+        <img class="logo-black" />
+        <div>The Odin Project</div>
+      </div>
+      <div id="cta-heading">Create an account</div>
+      <div id="cta-text">Let's get started on your Web Development Journey</div>
+
+      <form action method>
+        <div class="two-col">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" name="phone-number" id="phone-number" />
+        </div>
+
+        <div class="two-col">
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password" />
+          </div>
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <div class="question">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+
+      <div class="credit">@Copyright John Kelly C. Temeña</div>
+      <div class="disclaimer">
+        *This webpage is only a webpage project for The Odin Project. To
+        register for The Odin Project, sign up for free on theodinproject.com
+      </div>
+    </div>
+  </body>
 </html>
