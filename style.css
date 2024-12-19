@@ -2,3 +2,57 @@
     font-family: 'Norse Bold';
     src: url(./fonts/Norse-Bold.otf);
 }
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+#hero {
+    position: relative;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,.6) 85%), url("./img/odin-light.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 1rem);
+    margin: 0.5rem;
+    border-radius: 0 25px 0 25px;
+    filter: brightness(95%) contrast(105%);
+}
+
+.logo-white {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 75px;
+}
+
+.headline, .quote {
+    color: white;
+    width: 100%;
+}
+
+.headline {
+    text-wrap: balance;
+    font-size: 3rem;
+    font-family: 'Norse Bold';
+    padding: 0 max(2rem, 8%);
+}
+
+.quote {
+    text-wrap: pretty;
+    font-size: 1.2rem;
+    padding: .5em max(2rem, 8%) 3rem max(2rem, 8%);
+}
+
+#form-section {
+    flex: 4;
+}
