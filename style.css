@@ -20,18 +20,24 @@ body {
     display: flex;
     height: 100vh;
     padding: 0.5rem;
-    gap: 1rem;
+}
+
+#hero {
+    flex: 4;
+}
+
+#form-section {
+    flex: 5;
 }
 
 #hero {
     position: relative;
-    flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,.7) 85%), url("./img/odin-light.png");
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -57,7 +63,7 @@ body {
 
 .headline {
     text-wrap: balance;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-family: 'Norse Bold';
     padding: 0 max(2rem, 8%);
 }
@@ -65,7 +71,7 @@ body {
 .quote {
     text-wrap: pretty;
     font-size: 1.2rem;
-    padding: 0.5em max(2rem, 8%) 2.4rem max(2rem, 8%);
+    padding: 0.5em max(2rem, 8%) 2rem max(2rem, 8%);
 }
 
 .attribution {
@@ -78,7 +84,6 @@ body {
 }
 
 #form-section {
-    flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
