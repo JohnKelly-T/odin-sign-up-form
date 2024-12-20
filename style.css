@@ -8,6 +8,7 @@
     --primary-color: #0f756d;
     --primary-color-light: #32a39a; 
     --accent-color: #e99e25;
+    --error-color: #ff726a;
 }
 
 * {
@@ -134,7 +135,7 @@ form {
 }
 
 form > div {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 }
 
 .two-col > div {
@@ -161,12 +162,28 @@ input {
     border: 2px solid lightgray;
     border-radius: 5px;
     color: var(--text-color);
+    transition: all 0.2s ease;
 }
 
-input:focus {
+input:hover, input:focus{
     outline: none;
+    border: 2px solid gray;
+}
+
+input:user-valid {
     border: 2px solid var(--primary-color-light);
-    transition: all 0.2s linear;
+}
+
+input:user-invalid {
+    border: 2px solid var(--error-color);
+}
+
+.invalid-message {
+    margin: -0.4rem 0;
+    display: none;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--error-color);
 }
 
 button[type="submit"] {
@@ -178,6 +195,12 @@ button[type="submit"] {
     border-radius: 5px;
     color: white;
     font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    filter: brightness(110%);
 }
 
 .question {
