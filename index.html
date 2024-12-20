@@ -55,10 +55,12 @@
             <div class="form-input">
               <label for="first-name">First Name</label>
               <input type="text" name="first-name" id="first-name" required />
+              <p class="invalid-message" id="first-name-error"></p>
             </div>
             <div class="form-input">
               <label for="last-name">Last Name</label>
               <input type="text" name="last-name" id="last-name" required />
+              <p class="invalid-message" id="last-name-error"></p>
             </div>
           </div>
           <div class="form-input">
@@ -69,6 +71,7 @@
               id="email"
               pattern="^\w+((\.|-)?\w+)+?@\w+(-?\w+)?\.\w{2,3}(\.\w{2,3})?$"
               required />
+            <p class="invalid-message" id="email-error"></p>
           </div>
           <div class="form-input">
             <label for="phone-number">Phone Number</label>
@@ -77,11 +80,13 @@
               name="phone-number"
               id="phone-number"
               pattern="[0-9]{10}" />
+            <p class="invalid-message" id="phone-number-error"></p>
           </div>
           <div class="two-col">
             <div class="form-input">
               <label for="password">Password</label>
               <input type="password" name="password" id="password" required />
+              <p class="invalid-message" id="password-error"></p>
             </div>
             <div class="form-input">
               <label for="confirm-password">Confirm Password</label>
@@ -90,6 +95,7 @@
                 name="confirm-password"
                 id="confirm-password"
                 required />
+              <p class="invalid-message" id="confirm-error"></p>
             </div>
           </div>
           <button type="submit">Create Account</button>
