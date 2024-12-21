@@ -22,15 +22,18 @@ body {
     padding: 0.5rem;
 }
 
+@media only screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+}
+
+/* Hero section */
+
 #hero {
     flex: 4;
-}
-
-#form-section {
-    flex: 5;
-}
-
-#hero {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -83,7 +86,34 @@ body {
     color: lightgray;
 }
 
+@media only screen and (max-width: 800px) {
+    #hero {
+        flex: none;
+        height: 90vh;
+        border-radius: 0 0 0 25px;
+    }
+
+    .logo-hero {
+        width: 100px;
+        position: static;
+        padding-bottom: 1.5rem;
+    }
+
+    .headline {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* Form section */
+
 #form-section {
+    flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,7 +125,7 @@ body {
 }
 
 header {
-    align-self: flex-start;
+    width: 100%;
 }
 
 .logo-and-name {
@@ -114,6 +144,26 @@ header {
     color: inherit;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 800px) {
+    #form-section {
+        gap: 4rem;
+    }
+
+    header {
+        width: 80vw;
+        height: calc(10vh - 2rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-name {
+        font-size: 2rem;
+    }
+}
+
+/* main section within form section */
 
 main {
     color: inherit;
@@ -214,6 +264,15 @@ button[type="submit"]:hover {
     text-align: center;
     font-style: italic;
 }
+
+@media only screen and (max-width: 800px) {
+    .two-col {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+/* footer section within form section */
 
 footer {
     color: inherit;
