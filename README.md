@@ -1,3 +1,3 @@
 # odin-sign-up-form
 
-Project for The Odin Project ot demonstrate skills on form creation
+A simple sign up form project to demonstrate form creation from basic styling to styling pseudo-classes of input elements
