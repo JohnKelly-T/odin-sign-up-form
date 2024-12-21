@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="./img/odin.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/odin.ico">
 
     <script src="./script.js" defer></script>
   </head>
@@ -20,7 +20,7 @@
   <body>
     <button id="theme-button"></button>
     <div id="hero">
-      <img class="logo-hero" src="./img/odin-lined.png" />
+      <img class="logo-hero" src="./img/odin-lined.png">
       <h1 class="headline">Your Career in Web Development Starts Here</h1>
       <p class="quote">
         Providing resources we wish we had learning web development. Designed to
@@ -29,21 +29,19 @@
       </p>
       <p class="attribution">
         Image by
-        <a
-          href="https://pixabay.com/users/mythologyart-34077399/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8920792"
-          >MythologyArt</a
-        >
+        <a href="https://pixabay.com/users/mythologyart-34077399/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8920792">
+          MythologyArt
+        </a>
         from
-        <a
-          href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8920792"
-          >Pixabay</a
-        >
+        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8920792">
+          Pixabay
+        </a>
       </p>
     </div>
     <div id="form-section">
       <header>
         <div class="logo-and-name">
-          <img id="logo-form" class="logo-black" src="./img/odin-lined.png" />
+          <img id="logo-form" class="logo-black" src="./img/odin-lined.png">
           <div class="logo-name">Odin</div>
         </div>
       </header>
@@ -57,12 +55,12 @@
           <div class="two-col">
             <div class="form-input">
               <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" required />
+              <input type="text" name="first-name" id="first-name" required>
               <p class="invalid-message" id="first-name-error"></p>
             </div>
             <div class="form-input">
               <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" required />
+              <input type="text" name="last-name" id="last-name" required>
               <p class="invalid-message" id="last-name-error"></p>
             </div>
           </div>
@@ -73,7 +71,7 @@
               name="email"
               id="email"
               pattern="^\w+((\.|-)?\w+)+?@\w+(-?\w+)?\.\w{2,3}(\.\w{2,3})?$"
-              required />
+              required>
             <p class="invalid-message" id="email-error"></p>
           </div>
           <div class="form-input">
@@ -82,13 +80,13 @@
               type="tel"
               name="phone-number"
               id="phone-number"
-              pattern="[0-9]{10}" />
+              pattern="[0-9]{10}">
             <p class="invalid-message" id="phone-number-error"></p>
           </div>
           <div class="two-col">
             <div class="form-input">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
+              <input type="password" name="password" id="password" required>
               <p class="invalid-message" id="password-error"></p>
             </div>
             <div class="form-input">
@@ -97,19 +95,26 @@
                 type="password"
                 name="confirm-password"
                 id="confirm-password"
-                required />
+                required>
               <p class="invalid-message" id="confirm-error"></p>
             </div>
           </div>
           <button type="submit">Create Account</button>
         </form>
         <div class="question">
-          Already have an account? <a href="#">Log in</a>
+          Already have an account?
+          <a href="#">Log in</a>
         </div>
       </main>
 
       <footer>
-        <div class="credit">@Copyright John Kelly C. Temeña</div>
+        <div class="credit">
+          Created by&nbsp;
+          <a id="github-link" href="https://github.com/JohnKelly-T">
+            John Kelly&nbsp;
+            <img id="github-icon" src="./img/github-icon.png">
+          </a>
+        </div>
         <div class="disclaimer">
           *This webpage is only a webpage project for The Odin Project. To
           register for The Odin Project, sign up for free on

@@ -36,6 +36,7 @@
     --input-border-color: gray;
     
     --logo-filter: drop-shadow(0 0 5px rgba(233, 158, 37, 1));
+    --github-icon-filter: contrast(0%);
 }
 
 
@@ -328,6 +329,8 @@ footer {
 }
 
 .credit {
+    display: flex;
+    align-items: center;
     font-size: 0.8rem;
 }
 
@@ -338,4 +341,17 @@ footer {
 
 a {
     color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#github-icon {
+    filter: var(--github-icon-filter);
+    width: 1rem;
 }
