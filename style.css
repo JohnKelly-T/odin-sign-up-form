@@ -22,6 +22,8 @@
     --input-border-color: lightgray;
 
     --logo-filter: brightness(0) drop-shadow(0 0 5px rgba(233, 158, 37, 1));
+    --light-attribution: visible;
+    --dark-attribution: none;
 }
 
 :root.dark {
@@ -37,6 +39,9 @@
     
     --logo-filter: drop-shadow(0 0 5px rgba(233, 158, 37, 1));
     --github-icon-filter: contrast(0%);
+
+    --light-attribution: none;
+    --dark-attribution: visible;
 }
 
 
@@ -127,6 +132,14 @@ body {
     font-style: italic;
     padding: 0 1rem 8px;
     color: lightgray;
+}
+
+#light-attribution {
+    display: var(--light-attribution);
+}
+
+#dark-attribution {
+    display: var(--dark-attribution);
 }
 
 @media only screen and (max-width: 800px) {
