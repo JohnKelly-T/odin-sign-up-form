@@ -280,6 +280,11 @@ input {
     transition: border 0.2s ease;
 }
 
+input::placeholder {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
 input:hover, input:focus{
     outline: none;
     border: 2px solid gray;
