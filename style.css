@@ -3,6 +3,11 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
 :root {
     --primary-color: #0f756d;
     --primary-color-light: #32a39a; 
